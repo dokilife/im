@@ -1,0 +1,13 @@
+Project IM {
+  database_type: 'PostgreSQL'
+  Note: '''
+    # IM Database
+  '''
+}
+
+Table messages {
+  id bigserial [pk]
+  from varchar [not null]
+  message_content text [not null]
+  created_at timestamptz [not null, default: `now()`]
+}
