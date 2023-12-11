@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package pb;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "github.com/dokilife/im/pb";
+
+message Message {
+    string from = 1;
+    string message = 2;
+    google.protobuf.Timestamp created_at = 3;
+}

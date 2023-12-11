@@ -8,6 +8,6 @@ Project IM {
 Table messages {
   id bigserial [pk]
   from varchar [not null]
-  message_content text [not null]
+  message text [not null]
   created_at timestamptz [not null, default: `now()`]
 }
