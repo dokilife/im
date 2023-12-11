@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package pb;
+
+import "google/protobuf/empty.proto";
+import "rpc_create_message.proto";
+import "rpc_get_message.proto";
+
+option go_package = "github.com/dokilife/im/pb";
+
+service IM {
+    rpc GetMessageStream (google.protobuf.Empty) returns (stream GetMessageStreamResponse);
+    rpc CreateMessage (CreateMessageRequest) returns (CreateMessageResponse);
+}

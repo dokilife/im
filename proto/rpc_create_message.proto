@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package pb;
+
+import "message.proto";
+
+option go_package = "github.com/dokilife/im/pb";
+
+message CreateMessageRequest {
+    string from = 1;
+    string message = 2;
+}
+
+message CreateMessageResponse {
+    Message message = 1;
+}
