@@ -5,3 +5,6 @@ INSERT INTO messages (
 ) VALUES (
   $1, $2
 ) RETURNING *;
+
+-- name: GetMessage :one
+SELECT * FROM messages ORDER BY created_at DESC LIMIT 1;

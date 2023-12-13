@@ -34,3 +34,19 @@ func (q *Queries) CreateMessage(ctx context.Context, arg CreateMessageParams) (M
 	)
 	return i, err
 }
+
+const getMessage = `-- name: GetMessage :one
+SELECT id, "from", message, created_at FROM messages ORDER BY created_at DESC LIMIT 1
+`
+
+func (q *Queries) GetMessage(ctx context.Context) (Message, error) {
+	row := q.db.QueryRow(ctx, getMessage)
+	var i Message
+	err := row.Scan(
+		&i.ID,
+		&i.From,
+		&i.Message,
+		&i.CreatedAt,
+	)
+	return i, err
+}
