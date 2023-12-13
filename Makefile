@@ -31,7 +31,7 @@ db_docs:
 	dbdocs build doc/db.dbml
 
 db_schema:
-	dbml2sql --postgres -o doc/schema.sql doc/db.dbml
+	dbml2sql --postgres -o doc/schema.sql doc/db.dbml;cat doc/patch.sql >> doc/schema.sql
 
 sqlc:
 	sqlc generate
