@@ -13,6 +13,12 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready", "-d", "im"]
+      interval: 30s
+      timeout: 60s
+      retries: 5
+      start_period: 80s  
   redis:
     image: redis:7.2.3-alpine3.18
     container_name: im-redis
@@ -21,6 +27,22 @@ services:
       - "6379:6379"
     volumes:
       - redis_data:/data
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: im-server
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_SOURCE=postgresql://postgres:secret@postgres:5432/im?sslmode=disable
+      - REDIS_ADDRESS=redis:6379
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
 
 volumes:
   postgres_data:
