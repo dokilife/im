@@ -6,11 +6,11 @@ require (
 	github.com/golang-migrate/migrate/v4 v4.17.0
 	github.com/jackc/pgx/v5 v5.6.0
 	github.com/rakyll/statik v0.1.7
-	github.com/rs/zerolog v1.32.0
-	github.com/spf13/viper v1.19.0
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20240314234333-6e1732d8331c
-	google.golang.org/grpc v1.62.1
-	google.golang.org/protobuf v1.33.0
+	github.com/rs/zerolog v1.33.0
+	github.com/spf13/viper v1.18.2
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20240123012728-ef4313101c80
+	google.golang.org/grpc v1.62.0
+	google.golang.org/protobuf v1.32.0
 )
 
 require (
