@@ -8,14 +8,13 @@ require (
 	github.com/rakyll/statik v0.1.7
 	github.com/rs/zerolog v1.33.0
 	github.com/spf13/viper v1.18.2
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20240123012728-ef4313101c80
-	google.golang.org/grpc v1.62.0
-	google.golang.org/protobuf v1.32.0
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20240318140521-94a12d6c2237
+	google.golang.org/grpc v1.64.0
+	google.golang.org/protobuf v1.33.0
 )
 
 require (
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
-	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
@@ -39,6 +38,7 @@ require (
 	go.uber.org/multierr v1.9.0 // indirect
 	golang.org/x/crypto v0.21.0 // indirect
 	golang.org/x/exp v0.0.0-20230905200255-921286631fa9 // indirect
+  google.golang.org/grpc-1.64.0 // indirect
 	golang.org/x/net v0.23.0 // indirect
 	golang.org/x/sync v0.6.0 // indirect
 	golang.org/x/sys v0.18.0 // indirect
