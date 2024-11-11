@@ -1,6 +1,7 @@
 module github.com/dokilife/im
 
 go 1.22.5
+toolchain go1.22.9
 
 require (
 	github.com/golang-migrate/migrate/v4 v4.18.1
@@ -8,8 +9,8 @@ require (
 	github.com/rakyll/statik v0.1.7
 	github.com/rs/zerolog v1.33.0
 	github.com/spf13/viper v1.19.0
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20240814211410-ddb44dafa142
-	google.golang.org/grpc v1.67.1
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20240903143218-8af14fe29dc1
+	google.golang.org/grpc v1.68.0
 	google.golang.org/protobuf v1.35.1
 )
 
