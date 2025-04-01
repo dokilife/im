@@ -1,12 +1,11 @@
 module github.com/dokilife/im
 
 go 1.22.5
-
-toolchain go1.22.9
+toolchain go1.24.1
 
 require (
 	github.com/golang-migrate/migrate/v4 v4.18.2
-	github.com/jackc/pgx/v5 v5.7.3
+	github.com/jackc/pgx/v5 v5.7.4
 	github.com/rakyll/statik v0.1.7
 	github.com/rs/zerolog v1.34.0
 	github.com/spf13/viper v1.20.0
