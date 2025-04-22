@@ -1,7 +1,6 @@
 module github.com/dokilife/im
 
-go 1.22.5
-toolchain go1.24.1
+go 1.24.2
 
 require (
 	github.com/golang-migrate/migrate/v4 v4.18.2
