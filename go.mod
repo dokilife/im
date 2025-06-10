@@ -8,8 +8,8 @@ require (
 	github.com/rakyll/statik v0.1.7
 	github.com/rs/zerolog v1.34.0
 	github.com/spf13/viper v1.20.1
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20250218202821-56aae31c358a
-	google.golang.org/grpc v1.72.2
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20250324211829-b45e905df463
+	google.golang.org/grpc v1.73.0
 	google.golang.org/protobuf v1.36.6
 )
 
