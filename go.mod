@@ -4,7 +4,7 @@ go 1.25.11
 
 require (
 	github.com/golang-migrate/migrate/v4 v4.20.1
-	github.com/jackc/pgx/v5 v5.10.0
+	github.com/jackc/pgx/v5 v5.11.0
 	github.com/rakyll/statik v0.1.8
 	github.com/rs/zerolog v1.35.1
 	github.com/spf13/viper v1.21.0
